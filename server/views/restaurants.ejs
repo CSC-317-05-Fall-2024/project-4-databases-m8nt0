@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <!-- deafult header -->
+    <header></header>
+    <nav></nav>
+    <!-- for each resturant it will loop through and create a card -->
+    <main class="restaurants-main">
+        <% if (restaurants && restaurants.length > 0) { %>
+            <% restaurants.forEach(function(restaurant) { %>
+                <div class="restaurant" data-id="<%= restaurant.id %>">
+                    <img src="<%= restaurant.photo || '/images/default-restaurant.jpg' %>" alt="<%= restaurant.name %>">
+                    <h2><a href="/restaurants/<%= restaurant.id %>"><%= restaurant.name %></a></h2>
+                    <p><%= restaurant.address %></p>
+                    <p>Phone: <%= restaurant.phone %></p>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            <% }); %>
+        <% } else { %>
+            <p>No restaurants found.</p>
+        <% } %>
+    </main>
+    <footer></footer>
+    <!-- The scripts for header of the page, and deletion of cards -->
+    <script src="/scripts/header.js"></script>
+    <script src="/scripts/restaurantCards.js"></script>
+</body>
+</html>

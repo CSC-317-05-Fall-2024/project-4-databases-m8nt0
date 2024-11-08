@@ -1,0 +1,58 @@
+
+
+.restaurant-details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.restaurant-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.restaurant-details h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.restaurant-details h2 {
+    font-size: 1.5em;
+    margin: 5px 0;
+    color: #666;
+}
+
+.reviews {
+    margin-top: 20px;
+}
+
+.reviews h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review p {
+    margin: 5px 0;
+}
+
+.review p:first-child {
+    font-weight: bold;
+    color: #ff9800; /* Color for rating */
+}
